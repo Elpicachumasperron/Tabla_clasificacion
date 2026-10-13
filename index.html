@@ -1,468 +1,173 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Diario de Producción</title>
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-    <main class="contenedor">
-
-        <h1>DIARIO DE PRODUCCIÓN</h1>
-
-        <!-- ==========================================
-             TABLA 1 - NÚMERO Y HORARIO DE RECOGIDAS
-        =========================================== -->
-
-        <section class="seccion">
-
-            <h2>El número y el horario de recogidas</h2>
-
-            <div class="tabla-scroll">
-
-                <table id="tabla-recogidas">
-
-                    <thead>
-                        <tr>
-                            <th>Salón</th>
-                            <th>1</th>
-                            <th>2</th>
-                            <th>3</th>
-                            <th>4</th>
-                            <th>5</th>
-                            <th>6</th>
-                            <th>7</th>
-                            <th>8</th>
-                            <th>9</th>
-                            <th>10</th>
-                            <th>11</th>
-                            <th>H Piso</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <th>1</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>2</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>3</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>4</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>5</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>6</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>7</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>8</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>9</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>10</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>11</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>12</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                        <tr>
-                            <th>Des</th>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td><input type="number" min="0"></td>
-                            <td class="resultado fila-total">0</td>
-                        </tr>
-
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <th>Total</th>
-
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-                            <td class="resultado columna-total">0</td>
-
-                            <td class="resultado gran-total">0</td>
-                        </tr>
-                    </tfoot>
-
-                </table>
-
-            </div>
-
-        </section>
-
-
-        <!-- ==========================================
-             TABLA 2 - CLASIFICACIÓN HUEVO
-        =========================================== -->
-
-        <section class="seccion">
-
-            <h2>Clasificación Huevo</h2>
-
-            <table class="tabla-pequena">
-
-                <thead>
-                    <tr>
-                        <th>Clasificación</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th>H. Limpio</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>H. Tratado</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Sucio Nido</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Blanco-Deforme</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Doble yema</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Piso</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Pequeño</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Roto</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Desecho</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>TOTAL</th>
-                        <td></td>
-                    </tr>
-                </tbody>
-
-            </table>
-
-        </section>
-
-
-        <!-- ==========================================
-             TABLA 3 - INVENTARIO HUEVO INCUBABLE
-        =========================================== -->
-
-        <section class="seccion">
-
-            <h2>Inv. H Incubable</h2>
-
-            <table class="tabla-inventario">
-
-                <thead>
-                    <tr>
-                        <th>Concepto</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th>Inicial</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Entrada</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Salida</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Saldo</th>
-                        <td></td>
-                    </tr>
-                </tbody>
-
-            </table>
-
-        </section>
-
-
-        <!-- ==========================================
-             TABLA 4 - INVENTARIO HUEVO NO CONFORME
-        =========================================== -->
-
-        <section class="seccion">
-
-            <h2>Inv. H no conforme</h2>
-
-            <table class="tabla-inventario">
-
-                <thead>
-                    <tr>
-                        <th>Concepto</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th>Inicial</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Entrada</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Salida</th>
-                        <td><input type="number" min="0"></td>
-                    </tr>
-
-                    <tr>
-                        <th>Saldo</th>
-                        <td></td>
-                    </tr>
-                </tbody>
-
-            </table>
-
-        </section>
-
-    </main>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+
+<!-- CLASIFICACIÓN HUEVO -->
+<section class="seccion">
+    <h2>Clasificación Huevo</h2>
+
+    <div class="tabla-scroll">
+        <table id="tabla-clasificacion" class="tabla-clasificacion">
+            <thead>
+                <tr>
+                    <th>Clasificación</th>
+                    <th>Izquierda</th>
+                    <th>Mitad</th>
+                    <th>Derecha</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>H. Limpio</th>
+                    <td><input id="limpio-izquierda" type="number" readonly></td>
+                    <td><input id="limpio-mitad" type="number" readonly></td>
+                    <td><input id="limpio-derecha" type="number" readonly></td>
+                </tr>
+
+                <tr>
+                    <th>H. Tratado</th>
+                    <td><input class="clasificacion-manual" data-tipo="tratado" data-lado="izquierda" type="number" min="0"></td>
+                    <td class="sin-casilla">—</td>
+                    <td><input class="clasificacion-manual" data-tipo="tratado" data-lado="derecha" type="number" min="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Sucio de Nido</th>
+                    <td><input class="clasificacion-manual" data-tipo="sucio" data-lado="izquierda" type="number" min="0"></td>
+                    <td class="sin-casilla">—</td>
+                    <td><input class="clasificacion-manual" data-tipo="sucio" data-lado="derecha" type="number" min="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Blanco-Deforme</th>
+                    <td><input class="clasificacion-manual" data-tipo="blanco" data-lado="izquierda" type="number" min="0"></td>
+                    <td class="sin-casilla">—</td>
+                    <td><input class="clasificacion-manual" data-tipo="blanco" data-lado="derecha" type="number" min="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Doble yema</th>
+                    <td><input class="clasificacion-manual" data-tipo="doble" data-lado="izquierda" type="number" min="0"></td>
+                    <td class="sin-casilla">—</td>
+                    <td><input class="clasificacion-manual" data-tipo="doble" data-lado="derecha" type="number" min="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Piso</th>
+                    <td><input class="clasificacion-manual" data-tipo="piso" data-lado="izquierda" type="number" min="0"></td>
+                    <td class="sin-casilla">—</td>
+                    <td><input class="clasificacion-manual" data-tipo="piso" data-lado="derecha" type="number" min="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Pequeño</th>
+                    <td><input class="clasificacion-manual" data-tipo="pequeno" data-lado="izquierda" type="number" min="0"></td>
+                    <td class="sin-casilla">—</td>
+                    <td><input class="clasificacion-manual" data-tipo="pequeno" data-lado="derecha" type="number" min="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Roto</th>
+                    <td><input class="clasificacion-manual" data-tipo="roto" data-lado="izquierda" type="number" min="0"></td>
+                    <td class="sin-casilla">—</td>
+                    <td><input class="clasificacion-manual" data-tipo="roto" data-lado="derecha" type="number" min="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Desecho</th>
+                    <td><input class="clasificacion-manual" data-tipo="desecho" data-lado="izquierda" type="number" min="0"></td>
+                    <td class="sin-casilla">—</td>
+                    <td><input class="clasificacion-manual" data-tipo="desecho" data-lado="derecha" type="number" min="0"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="totales-persona">
+        <h3>Totales por persona</h3>
+
+        <div class="totales-persona-grid">
+            <label>
+                Persona izquierda
+                <input id="total-persona-izquierda" type="number" readonly value="0">
+            </label>
+
+            <label>
+                Persona derecha
+                <input id="total-persona-derecha" type="number" readonly value="0">
+            </label>
+        </div>
+    </div>
+</section>
+
+
+<!-- INVENTARIO HUEVO INCUBABLE -->
+<section class="seccion">
+    <h2>Inv. H Incubable</h2>
+
+    <table class="tabla-inventario" id="tabla-incubable">
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Inicial</th>
+                <td><input id="incubable-inicial" type="number" min="0"></td>
+            </tr>
+
+            <tr>
+                <th>Entrada</th>
+                <td><input id="incubable-entrada" type="number" readonly value="0"></td>
+            </tr>
+
+            <tr>
+                <th>Salida</th>
+                <td><input id="incubable-salida" type="number" min="0"></td>
+            </tr>
+
+            <tr>
+                <th>Saldo</th>
+                <td><input id="incubable-saldo" type="number" readonly value="0"></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<!-- INVENTARIO HUEVO NO CONFORME -->
+<section class="seccion">
+    <h2>Inv. H no conforme</h2>
+
+    <table class="tabla-inventario" id="tabla-no-conforme">
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Inicial</th>
+                <td><input id="no-conforme-inicial" type="number" min="0"></td>
+            </tr>
+
+            <tr>
+                <th>Entrada</th>
+                <td><input id="no-conforme-entrada" type="number" readonly value="0"></td>
+            </tr>
+
+            <tr>
+                <th>Salida</th>
+                <td><input id="no-conforme-salida" type="number" readonly value="0"></td>
+            </tr>
+
+            <tr>
+                <th>Saldo</th>
+                <td><input id="no-conforme-saldo" type="number" readonly value="0"></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
